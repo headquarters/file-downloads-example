@@ -18,8 +18,8 @@ There are 3 methods shown:
 View the sample app at localhost:5000
 
 ### Notes
-`fetch` is not supported in [all major browsers yet](http://caniuse.com/#search=fetch)
-So this method will not work in IE11 (it fails silently in this example).
+`fetch` is not supported in [all major browsers yet](http://caniuse.com/#search=fetch),
+so this method will not work in IE11 (it fails silently in this example).
 
 The first two methods are verified to work in Chrome 57, Firefox 53, Safari 10.1, and IE11. 
 Chrome and Safari do not prompt the user to download the file, while Firefox and Safari do. 
