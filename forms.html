@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+</head>
+<body>
+  <h3>No Enctype</h3>
+  <form action="/get" method="GET">
+    <input type="text" name="search" />
+    <button type="submit">GET</button>
+  </form>
+  <br />  
+  <h3>application/x-www-form-urlencoded with GET</h3>
+  <form action="/get" method="GET" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="search" />
+    <button type="submit">GET</button>
+  </form>
+  <br />
+  <h3>application/x-www-form-urlencoded with POST</h3>
+  <form action="/post" method="POST" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="search" />
+    <button type="submit">POST</button>
+  </form>
+  <br />
+  <h3>multipart/form-data with POST</h3>
+  <form action="/post" method="POST" enctype="multipart/form-data">
+    <input type="text" name="search" />
+    <button type="submit">POST</button>
+  </form>
+
+</body>
+</html>
