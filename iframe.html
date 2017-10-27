@@ -3,9 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <title>Iframe Example</title>  
+  <style>
+    div { 
+      background: orange; 
+      padding: 20px; 
+      border: 1px solid gray; 
+      position: relative; 
+      top: 20px; 
+      z-index: 500; 
+    }
+    iframe, embed {
+      position: relative;
+      top: 0px;
+      z-index: 10;
+      width: 400px;
+      height: 400px;
+    }
+    #shim {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: none;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 <body>
   <h1>Iframe</h1>
-  <iframe src="/view-file"></iframe>
+  <div>Message that should overlap iframe and embed <iframe id="shim"></iframe></div>
+  <iframe src="/view-file" type="application/pdf"></iframe>
+  <embed src="/view-file" type="application/pdf"></embed>
 </body>
 </html>
